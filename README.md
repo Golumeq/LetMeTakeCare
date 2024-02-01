@@ -11,7 +11,6 @@ Chcąc przyczynić się do redukcji emisyjności możesz wiedząc o trasie, któ
 - [technologie](#technologies)
 - [baza danych](#database)
 - [Autorzy](#autorzy)
-- [Licencja](#licencja)
 
 
 ## status-projektu
@@ -59,7 +58,7 @@ MongoDB - argumentami przemawiającymi za tym typem bazy danych jest szybkość 
 
 Diagram:
 
-![Alt text](image.png)
+![image](https://github.com/Golumeq/LetMeTakeCare/assets/105518941/a7cdbec8-526f-4b5e-bdd3-11e99a70bf9a)
 
 ## autorzy
 
