@@ -3,10 +3,12 @@ import { selectAllUsers } from '../users/usersApiSlice'
 import NewTrailForm from './NewTrailForm'
 
 const NewTrail = () => {
-    //const users = useSelector(selectAllUsers)
+    const users = useSelector(selectAllUsers)
 
-    //const content = users ? <NewTrailForm users={users} /> : <p>Loading...</p>
+    if (!users?.length) return <p>Not Currently Available</p>
 
-    return <div>asd</div>
+    const content = <NewTrailForm users={users} />
+
+    return content
 }
 export default NewTrail

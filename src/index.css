@@ -10,17 +10,17 @@
 
 :root {
   /* COLORS */
-  --BGCOLOR: #0F172A;
+  --BGCOLOR: white;
   --BORDER-COLOR: #FFF;
-  --COLOR: #FFF;
+  --COLOR: black;
   --ERROR: firebrick;
   --INACTIVE: lightgray;
   --LINK-COLOR: orange;
-  --LINK-HOVER: rgba(245, 245, 245, 0.9);
+  --LINK-HOVER: black(245, 245, 245, 0.9);
   --TRAIL-BGCOLOR: hsla(240, 64%, 27%, 0.65);
   --STATUS-COMPLETE: limegreen;
   --STATUS-OPEN: firebrick;
-  --TABLE-BGCOLOR: #FFF;
+  --TABLE-BGCOLOR: white;
   --TABLE-COLOR: #000;
   --INPUT-INVALID: #F00;
 }
@@ -44,7 +44,7 @@
   font-size: 2.5rem;
   background-color: transparent;
   border: none;
-  color: black;
+  color: var(--COLOR);
   display: grid;
   place-content: center;
 }
@@ -116,9 +116,26 @@ a:focus-visible {
 .public,
 .welcome {
   display: flex;
-  flex-direction: column;
+  
+  align-items: flex-start;
   gap: 1rem;
-  color: black;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
 }
 
 .public {
@@ -205,7 +222,9 @@ tr {
 }
 
 .table {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   font-size: 1rem;
+  overflow-x: auto;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -224,7 +243,6 @@ tr {
   top: 0;
   z-index: 1;
 }
-
 .table__th,
 .table__cell {
   background-color: var(--TABLE-BGCOLOR);
@@ -241,7 +259,6 @@ tr {
 .table__cell--inactive {
   background-color: var(--INACTIVE);
 }
-
 /* ||  TRAIL */
 
 .trail__created,

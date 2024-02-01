@@ -72,7 +72,7 @@ const NewTraiForm = ({ users }) => {
                     </div>
                 </div>
                 <label className="form__label" htmlFor="title">
-                    Title:</label>
+                    Title / Destination:</label>
                 <input
                     className={`form__input ${validTitleClass}`}
                     id="title"
@@ -84,7 +84,7 @@ const NewTraiForm = ({ users }) => {
                 />
 
                 <label className="form__label" htmlFor="text">
-                    Text:</label>
+                    Package description:</label>
                 <textarea
                     className={`form__input form__input--text ${validTextClass}`}
                     id="text"

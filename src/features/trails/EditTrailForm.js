@@ -99,7 +99,7 @@ const EditTrailForm = ({ trail, users }) => {
                     </div>
                 </div>
                 <label className="form__label" htmlFor="trail-title">
-                    Title:</label>
+                    Title / Destination:</label>
                 <input
                     className={`form__input ${validTitleClass}`}
                     id="trail-title"
@@ -111,7 +111,7 @@ const EditTrailForm = ({ trail, users }) => {
                 />
 
                 <label className="form__label" htmlFor="trail-text">
-                    Text:</label>
+                    Package description:</label>
                 <textarea
                     className={`form__input form__input--text ${validTextClass}`}
                     id="trail-text"
