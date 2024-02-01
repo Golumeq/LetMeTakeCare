@@ -14,9 +14,6 @@ const getAllTrails = asyncHandler(async (req, res) => {
         return res.status(400).json({ message: 'No trails found' })
     }
 
-    // Add username to each trail before sending the response 
-    // See Promise.all with map() here: https://youtu.be/4lqJBBEpjRE 
-    // You could also do this with a for...of loop
     const trailsWithUser = await Promise.all(trails.map(async (trail) => {
         const user = await User.findById(trail.user).lean().exec()
         return { ...trail, username: user.username }
@@ -25,14 +22,12 @@ const getAllTrails = asyncHandler(async (req, res) => {
     res.json(trailsWithUser)
 })
 
-// @desc Create new trail
-// @route POST /trails
-// @access Private
+
 const createNewTrail = asyncHandler(async (req, res) => {
-    const { user, title, package } = req.body
+    const { user, title, text } = req.body
 
     // Confirm data
-    if (!user || !title || !package) {
+    if (!user || !title || !text) {
         return res.status(400).json({ message: 'All fields are required' })
     }
 
@@ -44,7 +39,7 @@ const createNewTrail = asyncHandler(async (req, res) => {
     }
 
     // Create and store the new user 
-    const trail = await Trail.create({ user, title, package })
+    const trail = await Trail.create({ user, title, text })
 
     if (trail) { // Created 
         return res.status(201).json({ message: 'New trail created' })
@@ -58,10 +53,10 @@ const createNewTrail = asyncHandler(async (req, res) => {
 // @route PATCH /trails
 // @access Private
 const updateTrail = asyncHandler(async (req, res) => {
-    const { id, user, title, package, completed } = req.body
+    const { id, user, title, text, completed } = req.body
 
     // Confirm data
-    if (!id || !user || !title || !package || typeof completed !== 'boolean') {
+    if (!id || !user || !title || !text || typeof completed !== 'boolean') {
         return res.status(400).json({ message: 'All fields are required' })
     }
 
@@ -82,7 +77,7 @@ const updateTrail = asyncHandler(async (req, res) => {
 
     trail.user = user
     trail.title = title
-    trail.package = package
+    trail.text = text
     trail.completed = completed
 
     const updatedTrail = await trail.save()

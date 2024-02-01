@@ -10,6 +10,10 @@ const corsOptions = require('./config/corsOptions')
 const connectDB = require('./config/dbConn')
 const mongoose = require('mongoose')
 const { logEvents } =require('./middleware/logger')
+const swaggerUi = require('swagger-ui-express')
+const swaggerSpec = require('./middleware/swaggerConfig')
+
+
 const PORT = process.env.PORT || 3500
 
 console.log(process.env.NODE_ENV)
@@ -27,8 +31,11 @@ app.use(cookieParser())
 app.use('/', express.static(path.join(__dirname, 'public')))
 
 app.use('/', require('./routes/root'))
+app.use('/auth', require('./routes/authRoutes'))
 app.use('/users', require('./routes/userRoutes'))
 app.use('/trails', require('./routes/trailRoutes'))
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec))
+
 
 app.all('*', (req, res) => {
     res.status(404)
