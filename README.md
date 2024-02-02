@@ -18,7 +18,7 @@ Currently, the project is in the conceptual development phase, where we have out
 
 ## Inspiration
 
-The "LetMeTakeCare" project was born during the MERN course conducted by Dave Grey. The inspiration behind creating this application was the desire to promote a more sustainable and ecological way of delivering packages by utilizing existing means of transportation.
+The "LetMeTakeCare" project was born during the MERN course conducted by Dave Grey.
 
 ## How to Use
 
@@ -61,6 +61,29 @@ We chose MongoDB as our database due to its fast data access and support for geo
 Database diagram:
 
 ![Diagram](https://github.com/Golumeq/LetMeTakeCare/assets/105518941/a7cdbec8-526f-4b5e-bdd3-11e99a70bf9a)
+
+## Features visualisation
+Login page
+
+![image](https://github.com/Golumeq/LetMeTakeCare/assets/105518941/db42d26b-da90-455c-a9ff-44e45dce7cb4)
+
+Packages overview
+
+![image](https://github.com/Golumeq/LetMeTakeCare/assets/105518941/955e389d-6516-49af-99d8-e90aa543d633)
+
+Trail Adding
+
+![image](https://github.com/Golumeq/LetMeTakeCare/assets/105518941/84be76a2-63d7-4168-8ccb-738814fe7020)
+
+Users page
+
+![image](https://github.com/Golumeq/LetMeTakeCare/assets/105518941/7850f20f-ed72-47a7-b0df-284476f422a6)
+
+User addition page
+
+![image](https://github.com/Golumeq/LetMeTakeCare/assets/105518941/b76d0db2-cadd-45f9-b992-7146074767d5)
+
+
 
 ## Author
 
