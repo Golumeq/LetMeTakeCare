@@ -1,0 +1,76 @@
+{
+    "counters": [
+        {
+            "_id": "65b92f42f6f421597dd7c528",
+            "id": "ticketNums",
+            "reference_value": null,
+            "seq": 502
+        }
+    ],
+    "trails": [
+        {
+            "_id": "65ba730fdd468453373d0400",
+            "user": "65b92b2cbf857b6f346e7883",
+            "title": "Mountain Adventureasdasd",
+            "package": "Explore the high peaks",
+            "completed": true,
+            "createdAt": {
+                "$numberLong": "1706717967402"
+            },
+            "updatedAt": {
+                "$numberLong": "1706813458965"
+            },
+            "ticket": 501,
+            "__v": 0
+        },
+        {
+            "_id": "65ba7ed617d5a58280ed9300",
+            "user": "65bbde98e14172e7ed18e7b2",
+            "title": "Mountain Adventureww",
+            "package": "Explore the high peaks",
+            "completed": false,
+            "createdAt": {
+                "$numberLong": "1706720982386"
+            },
+            "updatedAt": {
+                "$numberLong": "1706813786779"
+            },
+            "ticket": 502,
+            "__v": 0
+        }
+    ],
+    "users": [
+        {
+            "_id": "65b91e48c39af2d74fd09fde",
+            "username": "Lukaszz",
+            "password": "$2b$10$.hyjV9ohyidie.ziPgDHz.mCIvC0XLdceXDdBOrJqFIWHC4uNJt2a",
+            "roles": [
+                "Driver",
+                "Customer",
+                "Admin"
+            ],
+            "active": true,
+            "__v": 3
+        },
+        {
+            "_id": "65b92b2cbf857b6f346e7883",
+            "username": "lukasz",
+            "password": "$2b$10$57zJIwgHkRAUTtnLZgAWPOS2IcnjCarb3u55WNJmHUNeIOFz10.lC",
+            "roles": [
+                "Admin"
+            ],
+            "active": true,
+            "__v": 2
+        },
+        {
+            "_id": "65ba876afc44199319db8922",
+            "username": "asd",
+            "password": "$2b$10$kw7HyCtcV1AKxtUYVJtj2erF2uX1YIxjaPKj6BCl4KIEyvpq1eYCm",
+            "roles": [
+                "Driver"
+            ],
+            "active": true,
+            "__v": 1
+        }
+    ]
+}
