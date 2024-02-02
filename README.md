@@ -63,6 +63,9 @@ The "LetMeTakeCare" application was created using the following technologies:
 
 Unfortunately, I didn't have time to implement the full Swagger logic into the project. The process has been initiated, but its completion will need to be done at a later date.
 
+![image](https://github.com/Golumeq/LetMeTakeCare/assets/105518941/769addef-8532-4579-b1aa-c1d842833552)
+
+
 ## Database
 
 We chose MongoDB as our database due to its fast data access and support for geolocation, which perfectly supports our goals of delivering packages in a more eco-friendly way.
