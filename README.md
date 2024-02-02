@@ -2,6 +2,9 @@
 
 The idea behind the "LetMeTakeCare" project was to create an innovative application that allows for more sustainable delivery of packages, contributing to the reduction of emissions during transportation. Our application enables users to deliver packages during their trips, making use of existing routes and means of transportation in a more efficient way.
 
+![image](https://github.com/Golumeq/LetMeTakeCare/assets/105518941/946f3451-5c90-4fa2-87d3-ea5eb2715607)
+
+
 ## Table of Contents
 
 - [Project Status](#project-status)
@@ -9,7 +12,9 @@ The idea behind the "LetMeTakeCare" project was to create an innovative applicat
 - [How to Use](#how-to-use)
 - [Features](#features)
 - [Technologies](#technologies)
+- [Swagger](#swagger)
 - [Database](#database)
+- [Features visualisation](#features-visualisation)
 - [Author](#author)
 
 ## Project Status
@@ -53,6 +58,10 @@ The "LetMeTakeCare" application was created using the following technologies:
 - Express.js framework for building the backend server.
 - React library for building the user interface.
 - Node.js environment as the server platform.
+
+## Swagger
+
+Unfortunately, I didn't have time to implement the full Swagger logic into the project. The process has been initiated, but its completion will need to be done at a later date.
 
 ## Database
 
